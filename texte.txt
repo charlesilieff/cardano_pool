@@ -1,4 +1,5 @@
 V2
+V1000
 /Qui sommes-nous ?
 Nous sommes Charles et Mika, un partenariat de deux Toulousains motivés à démocratiser l’usage des crypto-monnaies.
 Mika, qui aide les administrations dans leurs transformations numériques, apporte son expérience technique et humaine.
