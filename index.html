@@ -7,17 +7,16 @@
 <html lang="fr">
 
 <head>
-	<title>{{NOM_DU_POOL}}</title>
+	<link rel="shortcut icon" type="image/png" href="/images/noun_cube.png" />
+	<title>ADAPOOL-EUROPE</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="./assets/css/dashboard.css" />
+	<script defer type="module" src="assets/js/controller.js"></script>
 	<noscript>
-
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	<script defer type="module" src="assets/js/controller.js"></script>
-
 </head>
 
 <body class="is-preload">
@@ -28,7 +27,7 @@
 		<!-- Header -->
 		<header id="header" class="alt">
 			<span class="logo"><img src="images/noun_cube.svg" alt="" /></span>
-			<h1>{{NOM_DU_POOL}}</h1>
+			<h1>ADAPOOL-EUROPE</h1>
 			<p>Opérateur de pool de staking Cardano basé en Europe<br />
 				pensé et réalisé par <a href="#">@Charles</a> et <a href="#">@Mika</a>.</p>
 		</header>
@@ -38,7 +37,7 @@
 			<ul>
 				<li><a href="#section_S1" class="active">Qui sommes-nous ?</a></li>
 				<li><a href="#section_S2">Pourquoi s’engager avec nous ?</a></li>
-				<li><a href="#section_S3">Comment participer ?</a></li>
+				<li><a href="#section_S3">Les détails du pool</a></li>
 				<li><a href="#section_S4">Pour en savoir plus...</a></li>
 			</ul>
 		</nav>
@@ -65,14 +64,14 @@
 							C’est à ce moment que nous avons découvert le projet Cardano et, depuis, nous le suivons avec un vif
 							intérêt.</p>
 						<p>
-							<strong> Notre objectif avec {{nom_de_pool}} est de créer une communauté de personnes partageant nos
+							<strong> Notre objectif avec ADAPOOL-EUROPE est de créer une communauté de personnes partageant nos
 								valeurs,
 								qui
 								croient en Cardano et à laquelle nous offrons une bonne expérience de mise en commun de
 								capitaux.</strong>
 						</p>
 					</div>
-					<span class="image"><img src="images/noun_cube.svg" alt="" /></span>
+					<span class="image"><img src="/images/incontournables_toulouse.jpg" alt="toulouse" /></span>
 				</div>
 			</section>
 
@@ -128,145 +127,135 @@
 					<h2>Détail du pool </h2>
 					<p>Pour participer au fonctionnement du réseau Cardano il vous suffit de staker vos crypto-monnaies ADA dans
 						notre pool.</p>
-					<p>Widget interactif de la pool https://adapools.org/</p>
+				</header>
 
+				<div class="dashboard-container" data-pool-id="XXXXXXXXX">
+					<div class="panel dashboard">
 
-					// TODO Faire le style
-					<div class="dashboard-container" data-pool-id="d073c1c581df6dac53c5c9b0307369116a7d09b4d4190bb71fb8f31c">
-						<div class="panel dashboard">
+						<div class="panel-header">
+							<h3 class="pool-title" data-name="pool-title"></h3>
+							<h4 class="pool-location" data-name="pool-location">Toronto, Canada</h4>
+							<span class="updated" data-name="pool-updated"><i>Mise à jour : </i></span>
+						</div><!-- /.panel-header -->
 
-							<div class="panel-header">
-								<h3 class="pool-title" data-name="pool-title"></h3>
-								<h4 class="pool-location" data-name="pool-location">Toronto, Canada</h4>
-								<span class="updated" data-name="pool-updated"><i>Mise à jour : </i></span>
-							</div><!-- /.panel-header -->
+						<div class="content-dashboard">
 
-							<div class="content">
+							<div class="info-panel pool-ticker">
+								<h3 class="info-panel-subheading">ID du Pool</h3>
+								<div data-name="pool-id" class="pool-id">XXXXXXXXX<button class="copy" title="Copier" data-text="XXXXXXXXX"></button></div>
+							</div><!-- /.info-panel -->
 
-								<div class="info-panel pool-ticker">
-									<h3 class="info-panel-subheading">ID du Pool</h3>
-									<div data-name="pool-id" class="pool-id">d073c1c581
-										df6dac53c5
-										c9b0307369
-										116a7d09b4
-										d4190bb71f
-										b8f31c <button class="copy" title="Copier"
-											data-text="d073c1c581df6dac53c5c9b0307369116a7d09b4d4190bb71fb8f31c"></button></div>
-								</div><!-- /.info-panel -->
+							<div class="info-panel">
+								<h3 class="info-panel-subheading">Engagement</h3>
+								<div data-name="pool-owners"></div>
+								<div data-name="pool-pledge">
+									<span class="emphasizeM" style="display:block">300k ADA</span>
+									<small>1 Propriétaire<br>
+									(Réel: 1557775 ADA)</small>
+								</div>
+							</div><!-- /.info-panel -->
 
-								<div class="info-panel">
-									<h3 class="info-panel-subheading">Engagement</h3>
-									<div data-name="pool-owners"></div>
-									<div data-name="pool-pledge"><span class="emphasizeM" style="display:block">300k ADA</span>
-										<small>1 Propriétaire
-											<br>(Réel: 1557775 ADA)</small>
+							<div class="info-panel info-panel-fees">
+								<h3 class="info-panel-subheading">Frais</h3>
+								<table class="fees">
+									<tbody>
+										<tr>
+											<th>Marge</th>
+											<td data-name="pool-fees-margin">1.00%</td>
+										</tr>
+										<tr>
+											<th title="Coûts fixes">Fixe</th>
+											<td data-name="pool-fees-fixed">340 ADA</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th>Coûts<br>
+												<span class="info" data-text="Le coût actuel recalculé à la taille actuelle du pool"></span>
+											</th>
+											<td data-name="pool-fees-real">3.16%</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div><!-- /.info-panel -->
+
+							<div class="info-panel info-panel-roa">
+								<h3 class="info-panel-subheading" title="Rendement des actifs">ROA</h3>
+								<div style="display:flex;">
+									<div style="display:flex;flex-direction:column;flex-basis:48%">
+										<div>Mois<br>
+											<span class="info"
+												data-text="Estimation du rendement annuel d'ADA sur la base des résultats des stakings durant les six dernières Epoch (30 jours)."></span>
+										</div>
+										<div data-name="pool-roa-actual" class="emphasizeM">5.10%</div>
 									</div>
-								</div><!-- /.info-panel -->
+									<div style="display:flex;flex-direction:column;flex-basis:48%">
+										<div>Vie<br>
+											<span class="info"
+												data-text="Rendement annuel estimé d’ADA basé sur les résultats des stakings pendant la durée de vie du pool."></span>
+										</div>
+										<div data-name="pool-roa-lifetime" class="emphasizeM">4.98%</div>
+									</div>
+								</div>
+								<small>Prochaine récompense dans<br>
+									<span class="clock next-rewards">4:03:02:17</span></small>
+							</div><!-- /.info-panel -->
 
-								<div class="info-panel info-panel-fees">
-									<h3 class="info-panel-subheading">Frais</h3>
-									<table class="fees">
-										<tbody>
-											<tr>
-												<th>Marge</th>
-												<td data-name="pool-fees-margin">1.00%</td>
-											</tr>
-											<tr>
-												<th title="Coûts fixes">Fixe</th>
-												<td data-name="pool-fees-fixed">340 ADA</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<th>Coûts<br>
-													<span class="info" data-text="Le coût actuel recalculé à la taille actuelle du pool"></span>
-												</th>
-												<td data-name="pool-fees-real">3.16%</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div><!-- /.info-panel -->
+							<div class="info-panel info-panel-stake">
+								<h2 class="info-panel-subheading">Stake</h2>
+								<div class="delegators" data-name="pool-delegators">77 Délégateurs</div>
+								<div class="stake-chart">
+									<svg viewBox="0 0 280 280">
+										<circle id="active" r="125" cx="140" cy="140" data-info-text="Actif: 21.03M ADA (31.8%)"
+											style="stroke-dasharray: 250, 785;"></circle>
+										<circle id="active-saturated" class="extended-spec" r="125" cx="140" cy="140"
+											style="stroke-dasharray: 0, 785;"></circle>
+										<circle id="available" r="100" cx="140" cy="140" data-info-text="Disponible: 44.95M ADA (68.1%)">
+										</circle>
+										<circle id="live" r="100" cx="140" cy="140" title="Stake en ligne"
+											data-info-text="En ligne: 21.08M ADA (31.9%)" style="stroke-dasharray: 200, 628;"></circle>
+										<circle id="live-saturated" r="100" cx="140" cy="140" style="stroke-dasharray: 0, 628;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" fill="#999">
+											<tspan id="stake" x="50%">21.08M ADA</tspan>
+											<tspan id="saturation" x="50%" dy="30">31.9 %</tspan>
+										</text>
+									</svg>
+								</div><!-- /.stake-chart -->
+								<div class="stake-legend">
+									<div class="live" data-val="21.08M">En ligne</div>
+									<div class="active" data-val="21.03M">Actif</div>
+									<!--div class='available' data-val='0 ADA'>Disponible</div-->
+								</div><!-- /.stake-legend -->
+							</div><!-- /.info-panel -->
 
-								<div class="info-panel info-panel-roa">
-									<h3 class="info-panel-subheading" title="Rendement des actifs">ROA</h3>
-									<div style="display:flex;">
-										<div style="display:flex;flex-direction:column;flex-basis:48%">
-											<div>Mois<br>
-												<span class="info"
-													data-text="Estimation du rendement annuel d'ADA sur la base des résultats des stakings durant les six dernières Epoch (30 jours)."></span>
+							<div class="info-panel">
+								<h2 class="info-panel-subheading">Blocks</h2>
+								<div class="epoch-blocks chart">
+									<div class="chart-title"></div>
+									<div class="current-luck">Chance: 91%<span class="info"
+											data-text="Production réelle/estimée de blocks durant l" epoch="" actuel'=""></span></div>
+									<div class="chart-content block-chart">
+										<div class="estimated" data-val="19">
+											<div data-val="3" data-name="Estimé" data-info-text="Blocks estimés dans le slot actuel"
+											style="height: 17.3637%;">
 											</div>
-											<div data-name="pool-roa-actual" class="emphasizeM">5.10%</div>
-										</div>
-										<div style="display:flex;flex-direction:column;flex-basis:48%">
-											<div>Vie<br>
-												<span class="info"
-													data-text="Rendement annuel estimé d’ADA basé sur les résultats des stakings pendant la durée de vie du pool."></span>
+										</div><!-- /.estimated -->
+										<div class="actual" data-val="">
+											<div data-val="3" data-name="Réel" data-info-text="Nombre réel de blocks minés dans le slot actuel"
+											style="height: 15.7895%;">
 											</div>
-											<div data-name="pool-roa-lifetime" class="emphasizeM">4.98%</div>
-										</div>
+										</div><!-- /.actual -->
 									</div>
-									<small>Prochaine récompense dans<br>
-										<span class="clock next-rewards">4:03:02:17</span></small>
-								</div><!-- /.info-panel -->
+								</div>
+							</div><!-- /.info-panel -->
+						</div><!-- /.content -->
 
-								<div class="info-panel info-panel-stake">
-									<h2 class="info-panel-subheading">Stake</h2>
-									<div class="delegators" data-name="pool-delegators">77 Délégateurs</div>
-									<div class="stake-chart">
-										<svg viewBox="0 0 280 280">
-											<circle id="active" r="125" cx="140" cy="140" data-info-text="Actif: 21.03M ADA (31.8%)"
-												style="stroke-dasharray: 250, 785;"></circle>
-											<circle id="active-saturated" class="extended-spec" r="125" cx="140" cy="140"
-												style="stroke-dasharray: 0, 785;"></circle>
-											<circle id="available" r="100" cx="140" cy="140" data-info-text="Disponible: 44.95M ADA (68.1%)">
-											</circle>
-											<circle id="live" r="100" cx="140" cy="140" title="Stake en ligne"
-												data-info-text="En ligne: 21.08M ADA (31.9%)" style="stroke-dasharray: 200, 628;"></circle>
-											<circle id="live-saturated" r="100" cx="140" cy="140" style="stroke-dasharray: 0, 628;"></circle>
-											<text x="50%" y="50%" text-anchor="middle" fill="#999">
-												<tspan id="stake" x="50%">21.08M ADA</tspan>
-												<tspan id="saturation" x="50%" dy="30">31.9 %</tspan>
-											</text>
-										</svg>
-									</div><!-- /.stake-chart -->
-									<div class="stake-legend">
-										<div class="live" data-val="21.08M">En ligne</div>
-										<div class="active" data-val="21.03M">Actif</div>
-										<!--div class='available' data-val='0 ADA'>Disponible</div-->
-									</div><!-- /.stake-legend -->
-								</div><!-- /.info-panel -->
+					</div><!-- ./panel -->
+				</div>
 
-								<div class="info-panel">
-									<h2 class="info-panel-subheading">Blocks</h2>
-
-									<div class="epoch-blocks chart">
-										<div class="chart-title"></div>
-										<div class="current-luck">Chance: 91%<span class="info"
-												data-text="Production réelle/estimée de blocks durant l" epoch="" actuel'=""></span></div>
-										<div class="chart-content block-chart">
-											<div class="estimated" data-val="19">
-												<div data-val="3" data-name="Estimé" data-info-text="Blocks estimés dans le slot actuel"
-													style="height: 17.3637%;"></div>
-											</div><!-- /.estimated -->
-											<div class="actual" data-val="">
-												<div data-val="3" data-name="Réel"
-													data-info-text="Nombre réel de blocks minés dans le slot actuel" style="height: 15.7895%;">
-												</div>
-											</div><!-- /.actual -->
-										</div>
-
-									</div>
-
-								</div><!-- /.info-panel -->
-							</div><!-- /.content -->
-
-						</div><!-- ./panel -->
-					</div>
-
-		</div>
-		</header>
-
-
+		<footer class="major">
+			<p>Widget interactif (source <a href="https://adapools.org/XXXXXXXXX" target="_blank">adapools.org</a>)</p>
+		</footer>
 		</section>
 
 		<!-- section_S4 -->
@@ -289,10 +278,14 @@
 	<!-- Footer -->
 	<footer id="footer">
 		<section>
-			<h2>Aliquam sed mauris</h2>
-			<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore
-				veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae
-				tincidunt odio.</p>
+			<h2>Avertissement</h2>
+			<p>Nous exploitons ce site Web à l'adresse https://adapool-europe.com et nous fournissons un service de staking de crypto-monnaies aux délégataires potentiels de Cardano (ADA).
+				En utilisant notre service, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.
+				Les performances passées ne garantissent pas les résultats futurs.
+				Tout rendement historique, rendement attendu ou projection de probabilité peut ne pas refléter le rendement futur réel.
+				Bien que les données de tiers que nous utilisons soient considérées comme fiables, nous ne pouvons pas en garantir l'exactitude ou l'exhaustivité.
+				Nous ne fournissont pas de conseils fiscaux et ne déclarons en aucune manière que les éléments décrits dans le présent site entraîneront une conséquence fiscale particulière. 
+			</p>
 			<ul class="actions">
 				<li><a href="generic.html" class="button">Mentions légales</a></li>
 			</ul>
@@ -310,7 +303,7 @@
 				<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 			</ul>
 		</section>
-		<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		<p class="copyright">&copy; ADAPOOL-EUROPE. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 	</footer>
 
 	</div>
