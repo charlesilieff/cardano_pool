@@ -24,8 +24,31 @@ const AJAX = async (url: string) => {
 const widget = async () => {
   const dataPool = await AJAX(API_Url);
 
-  document.querySelector(".pool-title")?.append(dataPool.data.db_name);
-  document.querySelector("[data-name=pool-updated]")?.append(dataPool.created);
+  document
+    .querySelector("[data-name=pool-title]")
+    ?.append(dataPool.data.db_name);
+  document.querySelector("[data-name=pool-updated]")?.append(dataPool.updated);
+  document
+    .querySelector("[data-name=pool-owners]")
+    ?.append(dataPool.data.owners);
+  document
+    .querySelector("[data-name=pool-fees-margin]")
+    ?.append(dataPool.data.tax_ratio);
+  document
+    .querySelector("[data-name=pool-fees-fixed]")
+    ?.append(dataPool.data.tax_fix);
+  document
+    .querySelector("[data-name=pool-fees-real]")
+    ?.append(dataPool.data.tax_real);
+  document
+    .querySelector("[data-name=pool-roa-actual]")
+    ?.append(dataPool.data.roa);
+  document
+    .querySelector("[data-name=pool-roa-lifetime]")
+    ?.append(dataPool.data.roa_lifetime);
+  document
+    .querySelector("[data-name=pool-delegators]")
+    ?.append(dataPool.data.delegators);
 };
 
 widget();
