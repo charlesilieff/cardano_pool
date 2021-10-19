@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { API_Url, TIMEOUT_SECONDS } from "./config.js";
+import { API_Url, TIMEOUT_SECONDS } from './config.js';
 var timeout = function (s) {
     return new Promise(function (_, reject) {
         setTimeout(function () {
@@ -70,22 +70,22 @@ var widget = function () { return __awaiter(void 0, void 0, void 0, function () 
             case 1:
                 dataPool = _k.sent();
                 (_a = document
-                    .querySelector("[data-name=pool-title]")) === null || _a === void 0 ? void 0 : _a.append(dataPool.data.db_name);
-                (_b = document.querySelector("[data-name=pool-updated]")) === null || _b === void 0 ? void 0 : _b.append(dataPool.updated);
+                    .querySelector('[data-name=pool-title]')) === null || _a === void 0 ? void 0 : _a.append(dataPool.data.db_name);
+                (_b = document.querySelector('[data-name=pool-updated]')) === null || _b === void 0 ? void 0 : _b.append(dataPool.updated);
                 (_c = document
-                    .querySelector("[data-name=pool-owners]")) === null || _c === void 0 ? void 0 : _c.append(dataPool.data.owners);
+                    .querySelector('[data-name=pool-owners]')) === null || _c === void 0 ? void 0 : _c.append(dataPool.data.owners.toString());
                 (_d = document
-                    .querySelector("[data-name=pool-fees-margin]")) === null || _d === void 0 ? void 0 : _d.append(dataPool.data.tax_ratio);
+                    .querySelector('[data-name=pool-fees-margin]')) === null || _d === void 0 ? void 0 : _d.append(dataPool.data.tax_ratio.toString());
                 (_e = document
-                    .querySelector("[data-name=pool-fees-fixed]")) === null || _e === void 0 ? void 0 : _e.append(dataPool.data.tax_fix);
+                    .querySelector('[data-name=pool-fees-fixed]')) === null || _e === void 0 ? void 0 : _e.append(dataPool.data.tax_fix.toString());
                 (_f = document
-                    .querySelector("[data-name=pool-fees-real]")) === null || _f === void 0 ? void 0 : _f.append(dataPool.data.tax_real);
+                    .querySelector('[data-name=pool-fees-real]')) === null || _f === void 0 ? void 0 : _f.append(dataPool.data.tax_real.toString());
                 (_g = document
-                    .querySelector("[data-name=pool-roa-actual]")) === null || _g === void 0 ? void 0 : _g.append(dataPool.data.roa);
+                    .querySelector('[data-name=pool-roa-actual]')) === null || _g === void 0 ? void 0 : _g.append(dataPool.data.roa.toString());
                 (_h = document
-                    .querySelector("[data-name=pool-roa-lifetime]")) === null || _h === void 0 ? void 0 : _h.append(dataPool.data.roa_lifetime);
+                    .querySelector('[data-name=pool-roa-lifetime]')) === null || _h === void 0 ? void 0 : _h.append(dataPool.data.roa_lifetime.toString());
                 (_j = document
-                    .querySelector("[data-name=pool-delegators]")) === null || _j === void 0 ? void 0 : _j.append(dataPool.data.delegators);
+                    .querySelector('[data-name=pool-delegators]')) === null || _j === void 0 ? void 0 : _j.append(dataPool.data.delegators.toString());
                 return [2 /*return*/];
         }
     });
