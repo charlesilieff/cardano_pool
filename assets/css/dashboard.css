@@ -97,11 +97,10 @@
 .panel-header {
   color: #fff;
   padding: 12px;
-  background-color: #b1afaf;
-  background-image: url(/p/bg-noise.png);
+  background-color: #fcbf49;
 }
 .info-panel-subheading {
-  color: #c70b0d;
+  color: #d62828;
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -131,14 +130,14 @@ button.copy:after {
   position: absolute;
 }
 button.copy:after {
-  content: " ";
+  content: ' ';
   left: 20%;
   top: 20%;
   background-color: #fff;
 }
 button.copy:hover {
   opacity: 1;
-  border-color: #0092c3;
+  border-color: #003049;
 }
 .info {
   position: relative;
@@ -151,7 +150,7 @@ button.copy:hover {
   color: #fff;
 }
 .info:before {
-  content: "i";
+  content: 'i';
   font-family: monospace;
   position: absolute;
   top: 8px;
@@ -201,7 +200,7 @@ button.copy:hover {
   top: 50%;
   color: #fff;
   text-align: center;
-  background-color: rgba(244, 219, 55, 0.9);
+  background-color: #f77f00;
   z-index: 1000;
   pointer-events: none;
 }
@@ -336,7 +335,7 @@ button.copy:hover {
   text-align: left;
 }
 .stake-legend > div:before {
-  content: " ";
+  content: ' ';
   position: relative;
   display: inline-block;
   width: 16px;
@@ -464,8 +463,8 @@ button.copy:hover {
 }
 .epoch-blocks .actual > div:after,
 .epoch-blocks .estimated > div:after,
-div[data-name="pool-pledge"] span,
-span[data-name="pool-ticker"] {
+div[data-name='pool-pledge'] span,
+span[data-name='pool-ticker'] {
   color: #050505;
 }
 .epoch-blocks .actual {
@@ -499,11 +498,9 @@ span[data-name="pool-ticker"] {
   text-align: center;
   font-size: 0.875em;
   border: 3px solid #2b2b2b;
-
-  max-width: 450px;
 }
 .dashboard-container:hover {
-  background-color: #f5df4f;
+  background-color: #f77f00;
 }
 .dashboard.loading > .content:before,
 .pool-title:before {
@@ -511,13 +508,13 @@ span[data-name="pool-ticker"] {
   background-position: center center;
 }
 .dashboard.loading > .content:before {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(73, 149, 46, 0.7);
+  background-color: #0092c3;
   z-index: 1000;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.0' width='64px' height='64px' viewBox='0 0 128 128' xml:space='preserve'%3E%3Ccircle cx='64.13' cy='64.13' r='27.63' fill='%2358a5db'/%3E%3Cpath d='M64.13 18.5A45.63 45.63 0 1 1 18.5 64.13 45.63 45.63 0 0 1 64.13 18.5zm0 7.85a37.78 37.78 0 1 1-37.78 37.78 37.78 37.78 0 0 1 37.78-37.78z' fill-rule='evenodd' fill='%2358a5db'/%3E%3Cg%3E%3Cpath d='M95.25 17.4a56.26 56.26 0 0 0-76.8 13.23L12.1 26.2a64 64 0 0 1 87.6-15.17z' fill='%2358a5db'/%3E%3Cpath d='M95.25 17.4a56.26 56.26 0 0 0-76.8 13.23L12.1 26.2a64 64 0 0 1 87.6-15.17z' fill='%2358a5db' transform='rotate(120 64 64)'/%3E%3Cpath d='M95.25 17.4a56.26 56.26 0 0 0-76.8 13.23L12.1 26.2a64 64 0 0 1 87.6-15.17z' fill='%2358a5db' transform='rotate(240 64 64)'/%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 64 64' to='120 64 64' dur='1080ms' repeatCount='indefinite'%3E%3C/animateTransform%3E%3C/g%3E%3C/svg%3E");
   background-size: 60px 60px;
@@ -528,14 +525,14 @@ span[data-name="pool-ticker"] {
   margin-bottom: 12px;
 }
 .pool-title:before {
-  content: "";
+  content: '';
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 28px;
   height: 28px;
   margin: 0 6px 0 0;
-  background-image: url("/images/noun_cube.svg");
+  background-image: url('/images/noun_cube.svg');
   background-size: contain;
 }
 .pool-location {
@@ -545,7 +542,7 @@ span[data-name="pool-ticker"] {
   margin-bottom: 6px;
 }
 .pool-location:before {
-  content: " ";
+  content: ' ';
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -572,7 +569,7 @@ span[data-name="pool-ticker"] {
 .emphasizeL,
 .emphasizeM,
 .updated {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .emphasizeM {
   position: relative;
@@ -583,11 +580,9 @@ span[data-name="pool-ticker"] {
   font-size: 1em;
 }
 .updated {
-  color: #d9d9d9;
-  font-size: 0.8em;
-  font-weight: 300;
-  line-height: 1;
-  text-align: right;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 .panel i {
   font-weight: 400;

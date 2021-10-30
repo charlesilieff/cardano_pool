@@ -63,29 +63,25 @@ var AJAX = function (url) { return __awaiter(void 0, void 0, void 0, function ()
 }); };
 var widget = function () { return __awaiter(void 0, void 0, void 0, function () {
     var dataPool;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
-    return __generator(this, function (_k) {
-        switch (_k.label) {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
+    return __generator(this, function (_l) {
+        switch (_l.label) {
             case 0: return [4 /*yield*/, AJAX(API_Url)];
             case 1:
-                dataPool = _k.sent();
-                (_a = document
-                    .querySelector('[data-name=pool-title]')) === null || _a === void 0 ? void 0 : _a.append(dataPool.data.db_name);
-                (_b = document.querySelector('[data-name=pool-updated]')) === null || _b === void 0 ? void 0 : _b.append(dataPool.updated);
-                (_c = document
-                    .querySelector('[data-name=pool-owners]')) === null || _c === void 0 ? void 0 : _c.append(dataPool.data.owners.toString());
-                (_d = document
-                    .querySelector('[data-name=pool-fees-margin]')) === null || _d === void 0 ? void 0 : _d.append(dataPool.data.tax_ratio.toString());
-                (_e = document
-                    .querySelector('[data-name=pool-fees-fixed]')) === null || _e === void 0 ? void 0 : _e.append(dataPool.data.tax_fix.toString());
-                (_f = document
-                    .querySelector('[data-name=pool-fees-real]')) === null || _f === void 0 ? void 0 : _f.append(dataPool.data.tax_real.toString());
-                (_g = document
-                    .querySelector('[data-name=pool-roa-actual]')) === null || _g === void 0 ? void 0 : _g.append(dataPool.data.roa.toString());
-                (_h = document
-                    .querySelector('[data-name=pool-roa-lifetime]')) === null || _h === void 0 ? void 0 : _h.append(dataPool.data.roa_lifetime.toString());
-                (_j = document
-                    .querySelector('[data-name=pool-delegators]')) === null || _j === void 0 ? void 0 : _j.append(dataPool.data.delegators.toString());
+                dataPool = _l.sent();
+                console.log(dataPool);
+                // Pour que le bouton copier marche
+                navigator.clipboard.writeText(dataPool.data.pool_id); // browser copy
+                (_a = document.querySelector('[data-name=pool-id]')) === null || _a === void 0 ? void 0 : _a.prepend(dataPool.data.pool_id);
+                (_b = document.querySelector('[data-name=pool-title]')) === null || _b === void 0 ? void 0 : _b.append(dataPool.data.db_name);
+                (_c = document.querySelector('[data-name=pool-updated]')) === null || _c === void 0 ? void 0 : _c.append(dataPool.updated);
+                (_d = document.querySelector('[data-name=pool-owners]')) === null || _d === void 0 ? void 0 : _d.append(dataPool.data.owners.toString());
+                (_e = document.querySelector('[data-name=pool-fees-margin]')) === null || _e === void 0 ? void 0 : _e.append(dataPool.data.tax_ratio.toString() + '%');
+                (_f = document.querySelector('[data-name=pool-fees-fixed]')) === null || _f === void 0 ? void 0 : _f.append(dataPool.data.tax_fix.toString());
+                (_g = document.querySelector('[data-name=pool-fees-real]')) === null || _g === void 0 ? void 0 : _g.append(dataPool.data.tax_real.toString());
+                (_h = document.querySelector('[data-name=pool-roa-actual]')) === null || _h === void 0 ? void 0 : _h.append(dataPool.data.roa.toString());
+                (_j = document.querySelector('[data-name=pool-roa-lifetime]')) === null || _j === void 0 ? void 0 : _j.append(dataPool.data.roa_lifetime.toString());
+                (_k = document.querySelector('[data-name=pool-delegators]')) === null || _k === void 0 ? void 0 : _k.append(dataPool.data.delegators.toString());
                 return [2 /*return*/];
         }
     });

@@ -189,10 +189,10 @@ html {
 
 body {
   background-color: #d62828;
-  background-image: url('images/overlay.png'), -moz-linear-gradient(45deg, #d62828 15%, #fcbf49 85%);
-  background-image: url('images/overlay.png'), -webkit-linear-gradient(45deg, #d62828 15%, #fcbf49 85%);
-  background-image: url('images/overlay.png'), -ms-linear-gradient(45deg, #d62828 15%, #fcbf49 85%);
-  background-image: url('images/overlay.png'), linear-gradient(45deg, #d62828 15%, #fcbf49 85%);
+  background-image: url('images/overlay.png'), -moz-linear-gradient(45deg, #d62828 15%, #f77f00 85%);
+  background-image: url('images/overlay.png'), -webkit-linear-gradient(45deg, #d62828 15%, #f77f00 85%);
+  background-image: url('images/overlay.png'), -ms-linear-gradient(45deg, #d62828 15%, #f77f00 85%);
+  background-image: url('images/overlay.png'), linear-gradient(45deg, #d62828 15%, #f77f00 85%);
 }
 
 body.is-preload *,
@@ -3175,7 +3175,8 @@ table.alt tbody tr td {
 
 #header p {
   font-size: 1.25em;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.025em;
+  font-weight: 400;
 }
 
 #header.alt {
