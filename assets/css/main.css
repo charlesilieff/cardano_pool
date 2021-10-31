@@ -2983,22 +2983,27 @@ table.alt tbody tr td {
 
 .statistics li.style1 {
   background-color: #003049;
+  background: linear-gradient(#155c83, #003049);
 }
 
 .statistics li.style2 {
-  background-color: #577590;
+  background-color: #679436;
+  background: linear-gradient(#90c96e, #679436);
 }
 
 .statistics li.style3 {
   background-color: #f77f00;
+  background: linear-gradient(#fd9d4e, #f77f00);
 }
 
 .statistics li.style4 {
-  background-color: #9bb2e1;
+  background-color: #577590;
+  background: linear-gradient(#9bb2e1, #577590);
 }
 
 .statistics li.style5 {
-  background-color: #8cc9f0;
+  background-color: #532b2b;
+  background: linear-gradient(#8a5353, #532b2b);
 }
 
 .statistics li strong,
@@ -3114,7 +3119,7 @@ table.alt tbody tr td {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    text-align: center;
+    text-align: left;
   }
 
   .spotlight .content {
