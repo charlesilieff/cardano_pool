@@ -3185,7 +3185,7 @@ table.alt tbody tr td {
 }
 
 #header.alt {
-  padding: 7em 5em 4em 5em;
+  padding: 1em 5em 4em 5em;
 }
 
 #header.alt h1 {
@@ -3861,4 +3861,23 @@ body.is-preload #header.alt .logo {
   #wrapper {
     max-width: 100%;
   }
+}
+
+.langue {
+  padding-bottom: 3rem;
+  border-bottom: none;
+}
+
+.langue li a {
+  border-bottom: none;
+}
+
+.flag {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  border: solid 1px;
+  border-radius: 100%;
+  padding: 0.2em;
+  text-decoration: none;
 }

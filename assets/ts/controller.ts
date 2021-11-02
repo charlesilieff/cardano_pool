@@ -1,4 +1,4 @@
-import { API_Url, TIMEOUT_SECONDS } from './config.js';
+import { API_Url, TIMEOUT_SECONDS } from './config';
 
 const timeout = function (s: number): Promise<Response> {
   return new Promise(function (_, reject) {
