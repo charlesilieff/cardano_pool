@@ -1,3 +1,102 @@
+@keyframes info {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+button.copy {
+  margin: 0 0.7em;
+}
+.info,
+button.copy,
+button.copy:after {
+  display: inline-block;
+  cursor: pointer;
+}
+button.copy,
+button.copy:after {
+  all: unset;
+  box-sizing: border-box;
+  width: 13px;
+  height: 15px;
+  border: 2px solid #aaa;
+  opacity: 0.8;
+  font-size: 0.7rem;
+  transition: opacity 0.3s;
+  position: absolute;
+}
+button.copy:after {
+  content: ' ';
+  left: 20%;
+  top: 20%;
+  background-color: #fff;
+}
+button.copy:hover {
+  opacity: 1;
+  border-color: #003049;
+}
+.info {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  transition: background-color 0.4s;
+  color: #fff;
+}
+.info:before {
+  content: 'i';
+  font-family: monospace;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  background-color: #0092c3;
+  border-radius: 50%;
+}
+
+.info:after {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  max-width: 40vw;
+  padding: 6px 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.4);
+  transform: translateX(-50%) translateY(-100%);
+
+  content: attr(data-text);
+  visibility: hidden;
+  width: 200px;
+  font-size: 14px;
+  background-color: rgba(5, 5, 5, 0.9);
+  z-index: 400;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.info:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* à construire */
+.flx_tb_ligne {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* à supprimer
 @keyframes notify {
   0%,
   to {
@@ -8,15 +107,7 @@
     opacity: 1;
   }
 }
-@keyframes info {
-  0%,
-  60% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 @keyframes blink {
   0%,
   to {
@@ -108,65 +199,7 @@
   padding-bottom: 2px !important;
   margin-bottom: 12px !important;
 }
-button.copy {
-  margin: 0 0.7em;
-}
-.info,
-button.copy,
-button.copy:after {
-  display: inline-block;
-  cursor: pointer;
-}
-button.copy,
-button.copy:after {
-  all: unset;
-  box-sizing: border-box;
-  width: 13px;
-  height: 15px;
-  border: 2px solid #aaa;
-  opacity: 0.8;
-  font-size: 0.7rem;
-  transition: opacity 0.3s;
-  position: absolute;
-}
-button.copy:after {
-  content: ' ';
-  left: 20%;
-  top: 20%;
-  background-color: #fff;
-}
-button.copy:hover {
-  opacity: 1;
-  border-color: #003049;
-}
-.info {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  vertical-align: top;
-  text-align: center;
-  transition: background-color 0.4s;
-  color: #fff;
-}
-.info:before {
-  content: 'i';
-  font-family: monospace;
-  position: absolute;
-  top: 8px;
-  left: 6px;
-  width: 16px;
-  height: 16px;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: none;
-  font-weight: 300;
-  text-align: center;
-  background-color: #0092c3;
-  border-radius: 50%;
-}
 .info-label,
-.info:after,
 .notification {
   position: absolute;
   display: inline-block;
@@ -177,20 +210,6 @@ button.copy:hover {
   line-height: 1.4;
   box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.4);
   transform: translateX(-50%) translateY(-100%);
-}
-.info:after {
-  content: attr(data-text);
-  visibility: hidden;
-  width: 200px;
-  font-size: 14px;
-  background-color: rgba(5, 5, 5, 0.9);
-  z-index: 400;
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-.info:hover:after {
-  visibility: visible;
-  opacity: 1;
 }
 .info-costs:before {
   left: 0;
@@ -674,3 +693,4 @@ span[data-name='pool-ticker'] {
     font-size: 0.875em;
   }
 }
+*/

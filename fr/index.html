@@ -149,186 +149,59 @@
 						crypto-monnaies ADA dans
 						notre pool "adapool-europe".</p>
 				</header>
-				<p>logo + nom</p>
-				<div>ID du pool (avec icone de copie) <button class="copy" title="Copier"
-						data-text="ceci est l'id du pool"></button></div>
-				<p>valeurs dynamiques : </p>
-				<h2 class="info-panel-subheading">pledge</h2>
-				<p>nombre de proprietaires du pool (pool-owners)<br>
-					valeur du pledge (pool-pledge)</p>
-				<h2 class="info-panel-subheading">Frais</h2>
-				<table>
-					<tbody>
-						<tr>
-							<th>frais variables</th>
-							<td data-name="pool-fees-margin">pool-fees-margin % </td>
-						</tr>
-						<tr>
-							<th title="fixes">frais fixes (valeur planché)</th>
-							<td data-name="pool-fees-fixed">pool-fees-fixed ADA </td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th>total des frais réel<br>
-								<span class="info" data-text="Le total des frais recalculés à la taille actuelle du pool"></span>
-							</th>
-							<td data-name="pool-fees-real">pool-fees-real % </td>
-						</tr>
-					</tfoot>
-				</table>
 
-				<h2 class="info-panel-subheading">ROA</h2>
-				<div style="display:flex;flex-direction:column;flex-basis:48%">
-					<div>Mois<br>
-						<span class="info"
-							data-text="Estimation du rendement annuel d'ADA sur la base des résultats des stakings durant les six dernières Epoch (30 jours)."></span>
-					</div>
-					<div data-name="pool-roa-actual" class="emphasizeM">pool-roa-actual %</div>
+				<h3>[logo]  adapool-europe</h3> <!-- Style h3 à créer-->
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Identifiant à saisir pour déléguer vos ADA&nbsp;:</div>
+					<div class="flx_tb_col2">7f6c103302f96390d478a170fe80938b76fccd8a23490e3b6ddebcf7<button class="copy" title="Copier"
+						data-text="7f6c103302f96390d478a170fe80938b76fccd8a23490e3b6ddebcf7"></button> </div>
 				</div>
-				<div style="display:flex;flex-direction:column;flex-basis:48%">
-					<div>Vie<br>
-						<span class="info"
-							data-text="Rendement annuel estimé d’ADA basé sur les résultats des stakings pendant la durée de vie du pool."></span>
-					</div>
-					<div data-name="pool-roa-lifetime" class="emphasizeM">pool-roa-lifetime %</div>
+				<h3>Informations sur le pledge</h3>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Nombre actuel de proprietaires&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-owners"></span></div>
 				</div>
-
-
-				<h2 class="info-panel-subheading">Stake</h2>
-				<div data-name="pool-delegators" class="emphasizeM">pool-delegators</div>
-
-
-
-
-				<!-- inspiration
-				<div class="dashboard-container" data-pool-id="our_pool_id">
-					<div class="panel dashboard">
-
-						<div class="panel-header">
-							<h3 class="pool-title" data-name="pool-title"></h3>
-							<span class="updated" data-name="pool-updated"><i>Mise à jour : </i></span>
-						</div>
-
-						<div class="content-dashboard">
-
-							<div class="info-panel pool-ticker">
-								<h3 class="info-panel-subheading">ID du Pool</h3>
-								<div data-name="pool-id" class="pool-id"><button class="copy" title="Copier"
-										data-text="XXXXXXXXX"></button></div>
-							</div>
-
-							<div class="info-panel">
-								<h3 class="info-panel-subheading">Engagement</h3>
-								<div data-name="pool-owners">pool-owners</div>
-								<div data-name="pool-pledge">pool-pledge
-									<span class="emphasizeM" style="display:block">emphasizeM(dur:300k ADA)</span>
-									<small>dur1 Propriétaire<br>
-										dur(Réel: 1557775 ADA)</small>
-								</div>
-							</div>
-
-							<div class="info-panel info-panel-fees">
-								<h3 class="info-panel-subheading">Frais</h3>
-								<table class="fees">
-									<tbody>
-										<tr>
-											<th>frais variables</th>
-											<td data-name="pool-fees-margin">pool-fees-margin % </td>
-										</tr>
-										<tr>
-											<th title="fixes">frais fixes (valeur planché)</th>
-											<td data-name="pool-fees-fixed">pool-fees-fixed ADA </td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<th>total des frais réel<br>
-												<span class="info" data-text="Le total des frais recalculés à la taille actuelle du pool"></span>
-											</th>
-											<td data-name="pool-fees-real">pool-fees-real % </td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<div class="info-panel info-panel-roa">
-								<h3 class="info-panel-subheading" title="Rendement des actifs">ROA</h3>
-								<div style="display:flex;">
-									<div style="display:flex;flex-direction:column;flex-basis:48%">
-										<div>Mois<br>
-											<span class="info"
-												data-text="Estimation du rendement annuel d'ADA sur la base des résultats des stakings durant les six dernières Epoch (30 jours)."></span>
-										</div>
-										<div data-name="pool-roa-actual" class="emphasizeM">pool-roa-actual %</div>
-									</div>
-									<div style="display:flex;flex-direction:column;flex-basis:48%">
-										<div>Vie<br>
-											<span class="info"
-												data-text="Rendement annuel estimé d’ADA basé sur les résultats des stakings pendant la durée de vie du pool."></span>
-										</div>
-										<div data-name="pool-roa-lifetime" class="emphasizeM">pool-roa-lifetime %</div>
-									</div>
-								</div>
-								<small>Prochaine récompense dans<br>
-									<span class="clock next-rewards">4:03:02:17</span></small>
-							</div>
-
-							<div class="info-panel info-panel-stake">
-								<h2 class="info-panel-subheading">Stake</h2>
-								<div class="delegators" data-name="pool-delegators">pool-delegators</div>
-								<div class="stake-chart">
-									<svg viewBox="0 0 280 280">
-										<circle id="active" r="125" cx="140" cy="140" data-info-text="Actif: 21.03M ADA (31.8%)"
-											style="stroke-dasharray: 250, 785;"></circle>
-										<circle id="active-saturated" class="extended-spec" r="125" cx="140" cy="140"
-											style="stroke-dasharray: 0, 785;"></circle>
-										<circle id="available" r="100" cx="140" cy="140" data-info-text="Disponible: 44.95M ADA (68.1%)">
-										</circle>
-										<circle id="live" r="100" cx="140" cy="140" title="Stake en ligne"
-											data-info-text="En ligne: 21.08M ADA (31.9%)" style="stroke-dasharray: 200, 628;"></circle>
-										<circle id="live-saturated" r="100" cx="140" cy="140" style="stroke-dasharray: 0, 628;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" fill="#999">
-											<tspan id="stake" x="50%">21.08M ADA</tspan>
-											<tspan id="saturation" x="50%" dy="30">31.9 %</tspan>
-										</text>
-									</svg>
-								</div>
-								<div class="stake-legend">
-									<div class="live" data-val="21.08M">En ligne</div>
-									<div class="active" data-val="21.03M">Actif</div>
-									<div class='available' data-val='0 ADA'>Disponible</div>
-								</div>
-							</div>
-
-							<div class="info-panel">
-								<h2 class="info-panel-subheading">Blocks</h2>
-								<div class="epoch-blocks chart">
-									<div class="chart-title"></div>
-									<div class="current-luck">Chance: 91%<span class="info"
-											data-text="Production réelle/estimée de blocks durant l'epoch actuel"></span></div>
-									<div class="chart-content block-chart">
-										<div class="estimated" data-val="19">
-											<div data-val="3" data-name="Estimé" data-info-text="Blocks estimés dans le slot actuel"
-												style="height: 17.3637%;">
-											</div>
-										</div>
-										<div class="actual" data-val="">
-											<div data-val="3" data-name="Réel"
-												data-info-text="Nombre réel de blocks minés dans le slot actuel" style="height: 15.7895%;">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>-->
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Valeur du pledge&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-pledge"></span>(pool-pledge)&nbsp;ADA</div>
+				</div>
+				<h3>Informations sur le stake</h3>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Nombre actuel de délégataire&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-delegators"></span></div>
+				</div>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Valeur totale du stake&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="xxxxx">xxxxx</span>&nbsp;ADA</div>
+				</div>
+				<h3>Frais appliqués</h3>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Frais variables&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-fees-margin"></span></div>
+				</div>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Frais fixes&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-fees-fixed"></span>&nbsp;ADA<span class="info" data-text="Les frais fixes ne peuvent pas être en dessous de 340&nbsp;ADA"></span></div>
+				</div>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Total des frais réels&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-fees-real"></span>&nbsp;%<span class="info" data-text="Le total des frais recalculés à la taille actuelle du pool"></span></div>
+				</div>
+				<h3>Estimation du rendement (ROA)</h3>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Sur les 30 derniers jours&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-roa-actual"></span>&nbsp;%<span class="info"
+						data-text="Estimation du rendement annuel d'ADA sur la base des résultats des stakings durant les six dernières Epoch (30 jours)."></span></div>
+				</div>
+				<div class="flx_tb_ligne">
+					<div class="flx_tb_col1">Depuis sa création&nbsp;:</div>
+					<div class="flx_tb_col2"><span data-name="pool-roa-lifetime"></span>&nbsp;%<span class="info"
+						data-text="Rendement annuel estimé d’ADA basé sur les résultats des stakings pendant la durée de vie du pool."></span></div>
+				</div>
 				<footer class="major">
 					<p>Widget interactif,
-						<span data-name="pool-updated">mise à jour : </span>
-						(source <a href="https://adapools.org/pool/7f6c103302f96390d478a170fe80938b76fccd8a23490e3b6ddebcf7"
+						<span data-name="pool-updated">mise à jour&nbsp;: </span>
+						(source&nbsp;<a href="https://adapools.org/pool/7f6c103302f96390d478a170fe80938b76fccd8a23490e3b6ddebcf7"
 							target="_blank">adapools.org</a>)
 					</p>
 				</footer>
