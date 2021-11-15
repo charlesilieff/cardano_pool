@@ -3309,7 +3309,7 @@ body.is-preload #header.alt .logo {
   width: 64em;
   max-width: calc(100% - 4em);
   padding: 1em;
-  background-color: #f7800044;
+  background-color: rgba(227, 209, 190, 0.95);
   border-top-left-radius: 0.25em;
   border-top-right-radius: 0.25em;
   cursor: default;
@@ -3389,7 +3389,7 @@ body.is-preload #header.alt .logo {
 }
 
 #nav ul li a:hover {
-  background-color: rgba(222, 222, 222, 0.25);
+  background-color: rgba(222, 222, 222, 0.5);
 }
 
 #nav ul li a.active {
@@ -3401,7 +3401,6 @@ body.is-preload #header.alt .logo {
   position: fixed;
   top: 0;
   padding: 0.5em 1em;
-  background-color: #f7800028;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   z-index: 10000;
