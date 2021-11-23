@@ -97,3 +97,6 @@ button.copy:hover {
   min-width: 12em;
   padding-right: 0.25em;
 }
+.flx_tb_col2 {
+  word-break: break-word;
+}
