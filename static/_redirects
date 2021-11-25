@@ -1,0 +1,6 @@
+# Redirect default Netlify subdomain to primary domain
+https://ada-europe.fr/* https://adapool-europe.com/:splat 301!
+https://www.adapool-europe.com/* https://adapool-europe.com/:splat 301!
+https://adapool-europe.fr/* https://adapool-europe.com/:splat 301!
+https://www.ada-europe.fr/* https://adapool-europe.com/:splat 301!
+https://www.adapool-europe.fr/* https://adapool-europe.com/:splat 301!
