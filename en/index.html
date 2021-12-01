@@ -128,27 +128,7 @@
 			</section>
 
 			<!-- section_S3 -->
-			<section id="section_S3" class="main">
-				<header class="major">
-					<h2>Pool details</h2>
-					<p>Participating in the Cardano network is easy! You just have to stake your ADA crypto-currencies in our
-						"adapool-europe" pool.</p>
-				</header>
-
-				<div class="flx_tb_ligne">
-					<div class="flx_tb_col1">The identifier to enter to delegate your ADA:</div>
-					<div class="flx_tb_col2" onclick="copyText('3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce')">
-						3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce<button class="copy" title="Copy"></button> </div>
-				</div>
-
-				<footer class="major">
-					<p>Interactive widget,
-						<span data-name="pool-updated">update: </span>
-						(source <a href="https://adapools.org/pool/3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce"
-							target="_blank" rel="noopener">adapools.org</a>)
-					</p>
-				</footer>
-			</section>
+<section id="section_S3" class="main"><header class="major"><h2>Pool details</h2><p>Participating in the Cardano network is easy!<br>You just have to stake your ADA crypto-currencies in our "adapool-europe" pool.</p><div class="element" style="width: fit-content;"><span><img src="../images/noun_cube.png" alt="logo" style="width: 1.25em; height: auto"/>&nbsp;[EUR] adapool-europe</span><div class="pool_conteneur"><div class="pool_titre"> The identifier to enter to delegate your ADA:</div><div class="pool_id" title="Copier" onclick="copyText('3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce')"> 3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce<button class="copy"></button></div></div></div></header> <h3>Interactive widget</h3><span data-name="pool-updated">(update </span>GMT, source "[EUR] adapool-europe" on&nbsp;<a href="https://adapools.org/pool/3a0903012e156471ee2cfdf5af79902cd5108d891f90ec9cfbbce9ce" target="_blank">adapools.org</a>) <div class="conteneur"><div class="element"> <table><caption> Pledge</caption><tbody> <tr><th scope="row">Owners:</th><td><span data-name="pool-owners"></span></td></tr><tr><th scope="row">Value:</th><td><span data-name="pool-pledge"></span>&nbsp;₳</td></tr></tbody> </table></div><div class="element"> <table><caption> Stake</caption><tbody> <tr><th scope="row">Delegators:</th><td><span data-name="pool-delegators"></td></tr><tr><th scope="row">Value:</th><td><span data-name="pool-active_stake"></span>&nbsp;₳</td></tr></tbody> </table></div><div class="element"> <table><caption> Fees</caption><tbody> <tr><th scope="row">Variable fees:</th><td><span data-name="pool-fees-margin"></span></td></tr><tr><th scope="row">Fixed fee:</th><td><span data-name="pool-fees-fixed"></span>&nbsp;₳<span class="info" data-text="Les frais fixes ne peuvent pas être en dessous de 340&nbsp;ADA"></span></td></tr></tbody> </table></div></div><h3>Crypto-currency price</h3> <div class="tradingview-widget-container" style="margin-top:20px;"> <div id="tradingview_cd010"></div><div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ADAEUR/?exchange=KRAKEN" rel="noopener" target="_blank"><span class="blue-text">ADAEUR Chart</span></a> by TradingView</div><script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script> <script type="text/javascript">new TradingView.widget({"width": '100%', "height": 510, "symbol": "KRAKEN:ADAEUR", "interval": "D", "timezone": "Etc/UTC", "theme": "light", "style": "1", "locale": "en", "toolbar_bg": "#f1f3f6", "enable_publishing": false, "withdateranges": true, "details": true, "studies": ["Volume@tv-basicstudies"], "container_id": "tradingview_cd010"}); </script></div></section>
 
 		</div>
 
@@ -184,6 +164,7 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script type="module" src="../assets/ts/controller.ts"></script>
 	<script src="../assets/js/copyText_FFmode.js"></script>
 
 </body>
