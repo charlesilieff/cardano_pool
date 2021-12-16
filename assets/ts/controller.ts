@@ -49,7 +49,11 @@ widget();
 
 
 import i18next from 'i18next';
+const updateContent = () => {
+  document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+  document.getElementById('whyJoinUs')!!.innerHTML = i18next.t('whoAreWe');
 
+}
 
 i18next.init({
   lng: 'en', // if you're using a language detector, do not define the lng option
@@ -57,17 +61,54 @@ i18next.init({
   resources: {
     en: {
       translation: {
-        "whoAreWe": "Who we are?"
+        "whoAreWe": "Who we are?",
+        "whyJoinUs":"Why join us?",
       }
     },
     fr: {
       translation: {
-        "whoAreWe": "Qui sommes-nous ?"
+        "whoAreWe": "Qui sommes-nous ?",
+        "whyJoinUs":"Pourquoi s’engager avec nous ?"
       }
     }
   }
+},
+function(err, t) {
+  // init set content
+  updateContent();
 });
 
 
 
-document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
+
+
+document.querySelector('#lang-en')!!.addEventListener("click",()=>{
+  
+  i18next.changeLanguage("en")
+})
+
+document.querySelector('#lang-fr')!!.addEventListener("click",()=>{
+  
+  i18next.changeLanguage("fr")
+})
+
+i18next.on('languageChanged', () => {
+  updateContent();
+});
