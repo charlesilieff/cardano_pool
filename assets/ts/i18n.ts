@@ -2,6 +2,11 @@ import i18next from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { englishContent } from './content/english';
 import { frenchContent } from './content/french';
+import { germanContent } from './content/german';
+import { italianContent } from './content/italian';
+import { polishContent } from './content/polish';
+import { portugueseContent } from './content/portuguese';
+import { spanishContent } from './content/spanish';
 
 const updateContent = () => {
   document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
@@ -26,6 +31,11 @@ i18next.use(LanguageDetector).init(
     resources: {
       en: englishContent,
       fr: frenchContent,
+      pl: polishContent,
+      it: italianContent,
+      de: germanContent,
+      es: spanishContent,
+      pt: portugueseContent,
     },
   },
   function (err, t) {
