@@ -2,6 +2,8 @@ import { Content } from '../models/content';
 
 export const frenchContent: Content = {
   translation: {
+    title:
+      'Opérateur de pool de staking Cardano basé en Europe<br /> pensé et réalisé par <a href="mailto:adapool_charles@pm.me">@Charles</a> et <ahref="mailto:adapool_mikael@pm.me">@Mika</a>.',
     whoAreWe: 'Qui sommes-nous ?',
     whyJoinUs: 'Pourquoi s’engager avec nous ?',
     poolDetails: 'Pool details', //FIXME

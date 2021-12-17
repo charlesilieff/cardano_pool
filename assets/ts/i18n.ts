@@ -9,19 +9,35 @@ import { portugueseContent } from './content/portuguese';
 import { spanishContent } from './content/spanish';
 
 const updateContent = () => {
+  document.getElementById('title')!!.innerHTML = i18next.t('title');
   document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-  document.getElementById('whyJoinUs')!!.innerHTML = i18next.t('whoAreWe');
+  document.getElementById('whyJoinUs')!!.innerHTML = i18next.t('whyJoinUs');
   document.getElementById('poolDetails')!!.innerHTML = i18next.t('poolDetails');
   document.getElementById('s1.title')!!.innerHTML = i18next.t('whoAreWe');
   document.getElementById('s1.p1')!!.innerHTML = i18next.t('s1.p1');
   document.getElementById('s1.p2')!!.innerHTML = i18next.t('s1.p2');
   document.getElementById('s1.p3')!!.innerHTML = i18next.t('s1.p3');
   document.getElementById('s1.p4')!!.innerHTML = i18next.t('s1.p4');
-  document.getElementById('s2.title')!!.innerHTML = i18next.t('poolDetails');
+  document.getElementById('s2.title')!!.innerHTML = i18next.t('whyJoinUs');
   document.getElementById('s2.p1')!!.innerHTML = i18next.t('s2.p1');
   document.getElementById('s2.p2')!!.innerHTML = i18next.t('s2.p2');
   document.getElementById('s2.p3')!!.innerHTML = i18next.t('s2.p3');
   document.getElementById('s2.p4')!!.innerHTML = i18next.t('s2.p4');
+  document.getElementById('s2.p5')!!.innerHTML = i18next.t('s2.p5');
+  document.getElementById('s2.p6')!!.innerHTML = i18next.t('s2.p6');
+  document.getElementById('s2.p7')!!.innerHTML = i18next.t('s2.p7');
+  document.getElementById('s2.p8')!!.innerHTML = i18next.t('s2.p8');
+  document.getElementById('s2.p9')!!.innerHTML = i18next.t('s2.p9');
+  document.getElementById('s3.title')!!.innerHTML = i18next.t('poolDetails');
+  document.getElementById('s3.p1')!!.innerHTML = i18next.t('s3.p1');
+  document.getElementById('s3.p2')!!.innerHTML = i18next.t('s3.p2');
+  document.getElementById('s3.p3')!!.innerHTML = i18next.t('s3.p3');
+  // document.getElementById('s3.p4')!!.innerHTML = i18next.t('s3.p4');
+  // document.getElementById('s3.p5')!!.innerHTML = i18next.t('s3.p5');
+  // document.getElementById('s3.p6')!!.innerHTML = i18next.t('s3.p6');
+  // document.getElementById('s3.p7')!!.innerHTML = i18next.t('s3.p7');
+  // document.getElementById('s3.p8')!!.innerHTML = i18next.t('s3.p8');
+  // document.getElementById('s3.p9')!!.innerHTML = i18next.t('s3.p9');
 };
 
 i18next.use(LanguageDetector).init(

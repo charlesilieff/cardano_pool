@@ -2,6 +2,8 @@ import { Content } from '../models/content';
 
 export const englishContent: Content = {
   translation: {
+    title:
+      'Cardano staking pool operator based in Europe<br /> designed and built by <a href="mailto:adapool_charles@pm.me">@Charles</a> and <a href="mailto:adapool_mikael@pm.me">@Mika</a>.',
     whoAreWe: 'Who we are?',
     whyJoinUs: 'Why join us?',
     poolDetails: 'Pool details',
@@ -20,6 +22,18 @@ export const englishContent: Content = {
       p6: 'Our Europe-based Cardano staking pool is dedicated to strengthening and decentralizing the Cardano network. \n We offer high-availability, reliable and secure staking, based on two relay nodes and one producer node in enterprise-class server centers. Our goal is to create a good participant experience.',
       p7: "We put a strong focus on the performance and security of our pool infrastructure. We would like to allow as many people as possible to participate in the crypto adventure. That's why, unlike many other pools, we don't charge variable fees (0%).",
       p8: 'By staking your ADAs in our pool, you participate in the operation of the Cardano network.',
+      p9: "✔&nbsp;Your ADAs are never blocked, you can transfer them anytime and without penalty&nbsp;;<br><br> ✔&nbsp;Your ADAs are always in your wallet, they stay with you. You can't lose them by the 'staking' method &nbsp;;<br><br> ✔&nbsp;Your rewards are automatically reinvested. Every 5 days you receive your share of the winnings which are automatically stacked&nbsp;;<br><br> ✔&nbsp;You can start stacking your ADA, even if you have very few.",
+    },
+    s3: {
+      p1: 'Participating in the Cardano network is easy!<br>You just have to stake your ADA crypto-currencies in our "adapool-europe" pool.',
+      p2: 'The identifier to enter to delegate your ADA:',
+      p3: 'Interactive widget',
+      p4: '',
+      p5: '',
+      p6: '',
+      p7: '',
+      p8: '',
+      p9: '',
     },
   },
 };
