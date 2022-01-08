@@ -73,6 +73,11 @@ document.querySelector('#lang-fr')!!.addEventListener('click', () => {
   i18next.changeLanguage('fr');
 });
 
+document.querySelector('#lang-pl')!!.addEventListener('click', () => {
+  i18next.changeLanguage('pl');
+});
+
+
 i18next.on('languageChanged', () => {
   updateContent();
 });

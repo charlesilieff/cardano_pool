@@ -2,24 +2,45 @@ import { Content } from '../models/content';
 
 export const polishContent: Content = {
   translation: {
-    whoAreWe: 'Qui sommes-nous ?', //FIXME
-    whyJoinUs: 'Pourquoi s’engager avec nous ?',
-    poolDetails: 'Pool details', //FIXME
+    title:
+      'Europejski operator pooli stakingowej Cardano<br /> zaprojektowany i zbudowany przez <a href="mailto:adapool_charles@pm.me">@Karola</a> i <a href="mailto:adapool_mikael@pm.me">@Michała</a>.',
+    whoAreWe: 'Kim jesteśmy?',
+    whyJoinUs: 'Dlaczego warto do nas dołączyć?',
+    poolDetails: 'Szczegóły dotyczące puli',
     s1: {
-      p1: 'We are Charles 😊 and Mika 😉, a partnership of two French entrepreneurs motivated to democratize the use of crypto-currencies.',
-      p2: 'Mika, who helps administrations in their digital transformations, brings his technical and human experience. Charles brings over a decade of experience in software engineering. Together, we are enthusiastically participating in the development of the Cardano network!',
-      p3: 'We have been involved in cryptocurrencies since 2017, when we had the chance to make a profit at the top of the market. We discovered the Cardano project at that moment, and since then, we have been following it with great interest. Our goal with ADA Pool Europe is to create a community of people who share our values, believe in Cardano, and to which we would like to offer a good capital pooling experience.',
-      p4: 'Our goal with ADA Pool Europe is to create a community of people who share our values, believe in Cardano and to which we offer a good capital pooling experience.',
+      p1: 'Nazywamy się Karol 😊 i Michał 😉, jesteśmy partnerami zmotywowanymi do demokratyzacji korzystania z krypto-waluty.',      
+      p2:'Mika, która pomaga w administracji i jej cyfrowej transformacji, wnosi swoje techniczne i humanistyczne doświadczenie. Charles wnosi do projektu swoje ponad dziesięcioletnie doświadczenie w dziedzinie programowania. Razem entuzjastycznie uczestniczymy w rozwoju sieci Cardano!',
+      p3:'Jesteśmy zaangażowani w kryptowalutę od 2017 roku, mieliśmy szczęście, że udało nam się osiągnąć zysk na szczycie rynku. Wtedy właśnie odkryliśmy projekt Cardano i od tamtej pory śledzimy go z wielkim zainteresowaniem.',
+      p4: 'Naszym celem z ADA Pool Europe jest stworzenie społeczności podobnie myślących ludzi, którzy wierzą w Cardano i którym oferujemy dobre doświadczenie w łączeniu kapitału.',
     },
     s2: {
-      p1: 'We are motivated to democratize the use of crypto-currencies.',
-      p2: ' high availability infrastructure',
-      p3: ' with the lowest possible fees',
-      p4: ' open to the largest audience possible',
-      p5: ' dedicated and secure servers',
-      p6: 'Our Europe-based Cardano staking pool is dedicated to strengthening and decentralizing the Cardano network. \n We offer high-availability, reliable and secure staking, based on two relay nodes and one producer node in enterprise-class server centers. Our goal is to create a good participant experience.',
-      p7: "We put a strong focus on the performance and security of our pool infrastructure. We would like to allow as many people as possible to participate in the crypto adventure. That's why, unlike many other pools, we don't charge variable fees (0%).",
-      p8: 'By staking your ADAs in our pool, you participate in the operation of the Cardano network.',
+      p1: 'Jesteśmy zmotywowani, aby zdemokratyzować korzystanie z kryptowaluty.',
+      p2: ' infrastruktura wysokiej dostępności',
+      p3: ' z najniższymi możliwymi opłatami',
+      p4: ' otwarte dla jak największej liczby osób',
+      p5: ' dedykowane i bezpieczne serwery',
+p6:'Nasza europejska pula stakingowa Cardano ma na celu wzmocnienie i decentralizację sieci Cardano. Oferujemy wysokiej dostępności, niezawodne i bezpieczne stakowanie oparte na dwóch węzłach przekaźnikowych i jednym węźle producenckim w profesjonalnych centrach serwerowych. Naszym celem jest stworzenie dobrego doświadczenia uczestnictwa.',
+      p7: "Kładziemy duży nacisk na wydajność i bezpieczeństwo infrastrukyury naszej puli. Chcemy również umożliwić jak największej liczbie z Was udział w przygodzie z kryptowalutą. Dlatego też, w przeciwieństwie do wielu innych puli, nie pobieramy opłat zmiennych (0%).",
+      p8: 'Przechowując swoje ADA w naszej puli uczestniczysz w sieci Cardano.',
+      p9: "✔&nbsp;Twoje ADA nigdy nie są zablokowane, możesz je przenieść w każdej chwili i bez opł at. &nbsp;;<br><br> ✔&nbsp;Twoje ADA nigdy Cię nie opuszczą, nie możesz ich stracić przez staking.&nbsp;;<br><br> ✔&nbsp;Twoje nagrody są automatycznie reinwestowane, co 5 dni otrzymujesz swoją część wygranej, która jest automatycznie stakowana &nbsp;;<br><br> ✔&nbsp;Możesz zacząć stakować swoje ADA, nawet jeśli masz ich bardzo mało.",
     },
+    s3: {
+      p1: 'Aby uczestniczyć w sieci Cardano, nie ma nic łatwiejszego!<br> Wystarczy, że będą Państwo przechowywać waszą kryąptowalutę ADA w naszej puli "adapool-europe".',
+      p2: 'Zaloguj się, aby oddelegować swojego ADA&nbsp;:',
+      p3: 'Interactive widget',
+      p4: 'Pledge',
+      p5: 'Właściciele&nbsp;:',
+      p6: 'Wartość&nbsp;:',
+      p7: ' Stake',
+      p8: 'Delegatów :',
+      p9: 'Wartość&nbsp;:',
+      p10:'Koszty',
+      p11:'Koszty zmienne&nbsp;:',
+      p12:'Koszty stałe&nbsp;:',
+      p13:'Kursy kryptowalut'
+    },
+    footer:{
+      p1:'Skontaktuj się z nami'
+    }
   },
 };
