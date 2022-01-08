@@ -33,6 +33,14 @@ export interface Content extends ResourceLanguage {
       p7: string;
       p8: string;
       p9: string;
+      p10:string;
+      p11:string;
+      p12:string;
+      p13:string;
+
     };
+    footer:{
+      p1:string
+    }
   };
 }

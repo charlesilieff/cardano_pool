@@ -28,12 +28,19 @@ export const englishContent: Content = {
       p1: 'Participating in the Cardano network is easy!<br>You just have to stake your ADA crypto-currencies in our "adapool-europe" pool.',
       p2: 'The identifier to enter to delegate your ADA:',
       p3: 'Interactive widget',
-      p4: '',
-      p5: '',
-      p6: '',
-      p7: '',
-      p8: '',
-      p9: '',
+      p4: 'Pledge',
+      p5: 'Owners:',
+      p6: 'Value:',
+      p7: ' Stake',
+      p8: 'Delegators:',
+      p9: 'Value:',
+      p10:'Fees',
+      p11:'Variable fees:',
+      p12:'Fixed fee:',
+      p13:'Crypto-currency price'
     },
+    footer:{
+      p1:'Contact us'
+    }
   },
 };

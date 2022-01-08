@@ -32,12 +32,17 @@ const updateContent = () => {
   document.getElementById('s3.p1')!!.innerHTML = i18next.t('s3.p1');
   document.getElementById('s3.p2')!!.innerHTML = i18next.t('s3.p2');
   document.getElementById('s3.p3')!!.innerHTML = i18next.t('s3.p3');
-  // document.getElementById('s3.p4')!!.innerHTML = i18next.t('s3.p4');
-  // document.getElementById('s3.p5')!!.innerHTML = i18next.t('s3.p5');
-  // document.getElementById('s3.p6')!!.innerHTML = i18next.t('s3.p6');
-  // document.getElementById('s3.p7')!!.innerHTML = i18next.t('s3.p7');
-  // document.getElementById('s3.p8')!!.innerHTML = i18next.t('s3.p8');
-  // document.getElementById('s3.p9')!!.innerHTML = i18next.t('s3.p9');
+  document.getElementById('s3.p4')!!.innerHTML = i18next.t('s3.p4');
+  document.getElementById('s3.p5')!!.innerHTML = i18next.t('s3.p5');
+  document.getElementById('s3.p6')!!.innerHTML = i18next.t('s3.p6');
+  document.getElementById('s3.p7')!!.innerHTML = i18next.t('s3.p7');
+  document.getElementById('s3.p8')!!.innerHTML = i18next.t('s3.p8');
+  document.getElementById('s3.p9')!!.innerHTML = i18next.t('s3.p9');
+  document.getElementById('s3.p10')!!.innerHTML = i18next.t('s3.p10');
+  document.getElementById('s3.p11')!!.innerHTML = i18next.t('s3.p11');
+  document.getElementById('s3.p12')!!.innerHTML = i18next.t('s3.p12');
+  document.getElementById('s3.p13')!!.innerHTML = i18next.t('s3.p13');
+  document.getElementById('footer.p1')!!.innerHTML = i18next.t('footer.p1');
 };
 
 i18next.use(LanguageDetector).init(
@@ -59,24 +64,6 @@ i18next.use(LanguageDetector).init(
     updateContent();
   }
 );
-
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
-// document.getElementById('whoAreWe')!!.innerHTML = i18next.t('whoAreWe');
 
 document.querySelector('#lang-en')!!.addEventListener('click', () => {
   i18next.changeLanguage('en');
