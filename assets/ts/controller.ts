@@ -1,5 +1,6 @@
 import { API_Url, TIMEOUT_SECONDS } from './config';
 
+
 const timeout = function (s: number): Promise<Response> {
   return new Promise(function (_, reject) {
     setTimeout(function () {
@@ -33,13 +34,16 @@ const widget = async () => {
   document.querySelector('[data-name=pool-updated]')?.append(dataPool.updated);
   document.querySelector('[data-name=pool-owners]')?.append(dataPool.data.owners.toString());
   document.querySelector('[data-name=pool-fees-margin]')?.append(dataPool.data.tax_ratio.toString() + '%');
-  document.querySelector('[data-name=pool-fees-fixed]')?.append(dataPool.data.tax_fix / 1000000);
+  document.querySelector('[data-name=pool-fees-fixed]')?.append((dataPool.data.tax_fix / 1000000).toString());
   document.querySelector('[data-name=pool-fees-real]')?.append(dataPool.data.tax_real.toFixed(2));
   document.querySelector('[data-name=pool-roa-actual]')?.append(dataPool.data.roa.toString());
   document.querySelector('[data-name=pool-roa-lifetime]')?.append(dataPool.data.roa_lifetime.toString());
   document.querySelector('[data-name=pool-delegators]')?.append(dataPool.data.delegators.toString());
-  document.querySelector('[data-name=pool-active_stake]')?.append(Math.round(dataPool.data.active_stake / 1000000));
-  document.querySelector('[data-name=pool-pledge]')?.append(dataPool.data.pledge / 1000000);
+  document.querySelector('[data-name=pool-active_stake]')?.append(Math.round(dataPool.data.active_stake / 1000000).toString());
+  document.querySelector('[data-name=pool-pledge]')?.append((dataPool.data.pledge / 1000000).toString());
 };
 
 widget();
+
+
+
